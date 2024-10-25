@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: project2-deployment
   labels:
     app: nginx
-  spec:
+spec:
   replicas: 2
   selector:
     matchLabels:
@@ -19,4 +19,3 @@ metadata:
         image: saneeshshruthi/project2
         ports:
         - containerPort: 80
-
